@@ -73,7 +73,7 @@ export default function Page() {
           Contact <span className="text-[#4cc9f0]">Me</span>
         </h2>
 
-        <div className="flex justify-center items-center max-w-4xl mx-auto my-20 lg:my-30">
+        <div className="flex justify-center items-center max-w-3xl mx-auto my-20 lg:my-30">
           <form
             onSubmit={handleSubmit}
             className="w-full p-8 flex flex-col gap-3"

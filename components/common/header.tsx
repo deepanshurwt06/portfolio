@@ -1,13 +1,21 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Menu, X } from "lucide-react";
 import NavLink from "./nav-link";
 import { AnimatePresence ,motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false); // close mobile menu on route change
+  }, [pathname]); 
+
   return (
     <header className="sticky bg-[#000010] top-0 left-0 w-full z-50">
       <nav className="flex items-center max-w-7xl mx-auto py-5 px-10 mt-2">

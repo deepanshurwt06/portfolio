@@ -37,7 +37,7 @@ export default function ProjectCard({
   return (
     <div
       onClick={handleCardClick}
-      className="border-2 border-[#50b4d3] bg-transparent flex flex-col rounded-sm w-full max-w-[400px] shadow-md p-0 mx-auto h-[580px] cursor-pointer group"
+      className="border-2 border-[#50b4d3] bg-transparent flex flex-col rounded-sm w-[330px] sm:w-full max-w-[400px] shadow-md p-0 mx-auto h-auto sm:h-[580px]  cursor-pointer group"
     >
       <div className="relative w-full h-[300px] rounded-t-sm overflow-hidden">
         <Image
@@ -48,7 +48,7 @@ export default function ProjectCard({
         />
       </div>
 
-      <div className="relative overflow-hidden py-2 px-4 flex flex-col h-full">
+      <div className="relative overflow-hidden p-2 flex flex-col h-full">
         <div
           className="
             absolute inset-0

@@ -11,7 +11,7 @@ export default function Page() {
           My <span className="text-[#4cc9f0]">Projects</span>
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3-justify-center gap-6 my-20">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-6 my-20 overflow-x-auto">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
