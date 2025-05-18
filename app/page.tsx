@@ -1,10 +1,14 @@
-import VantaNetBackground from "@/components/vantaBAckground";
+import BackgroundDisplay from "@/components/common/backgroundDisplay";
+import HeroSection from "@/components/home/hero-section";
+
 
 export default function Home() {
   return (
    <>
-   <VantaNetBackground />
-   <div>This is my portfolio</div>
+   <BackgroundDisplay />
+   <main className="relative z-11 text-white min-h-screen w-full">
+    <HeroSection />
+   </main>
    </>
   );
 }
