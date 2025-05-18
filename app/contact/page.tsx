@@ -15,7 +15,7 @@ export default function Page() {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -53,8 +53,12 @@ export default function Page() {
         subject: "",
         message: "",
       });
-    } catch (error: any) {
-      console.error("Error submitting contact form:", error.message);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error("Error submitting contact form:", error.message);
+      } else {
+        console.error("Unknown error", error);
+      }
       toast.error(`Failed to send message`);
     }finally {
         setLoading(false); // ✅ Re-enable button
