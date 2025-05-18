@@ -19,7 +19,7 @@ export default function HomeContent() {
         <h2 className="text-2xl text-[#4cc9f0] font-bold md:text-3xl lg:4xl">
           A Full Stack Developer
         </h2>
-        <p className="text-md font-medium text-gray-400 md:text-xl lg:text-lg ">
+        <p className="text-md font-medium text-gray-400 md:text-xl lg:text-lg max-w-4xl">
           I am a final-year BCA student with hands-on experience in building
           full-stack web applications. Passionate about creating scalable and
           impactful solutions and turning ideas into real-world, while
