@@ -11,6 +11,6 @@ export const experienceData: ExperienceItem[] = [
   },{
     role: "Frontend Developer - Digital India",
     year: "Mar 2023 - Aug 23",
-    description: "Worked a a frontend development intern , contributing to design, UI migration , blogs and Git integration",
+    description: "Worked as a frontend development intern , contributing to design, UI migration , blogs and Git integration",
   },
 ];

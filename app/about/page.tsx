@@ -41,7 +41,7 @@ export default function Page() {
 
           {/* Description */}
           <p className="max-w-2xl lg:max-w-5xl text-gray-400 text-sm  md:text-md text-center px-2 sm:px-4">
-          I’m a final-year BCA student with hands-on experience in full-stack development, intelligent automation, and cloud technologies. From building dynamic web apps to optimizing backend systems, I’ve worked with a diverse tech stack, including React, Firebase, Node.js, and Three.js. I thrive in Agile environments, managing sprints, collaborating with teams, and delivering scalable solutions. With a passion for problem-solving and innovation, I’m always looking to create tech that makes a real impact.
+          I’m a final-year BCA student with hands-on experience in full-stack development, intelligent automation, and cloud technologies. From building dynamic web apps to optimizing backend systems, I’ve worked with a diverse tech stack, including React, Firebase, Node.js, Express.js and Next.js. I thrive in Agile environments, managing sprints, collaborating with teams, and delivering scalable solutions. With a passion for problem-solving and innovation, I’m always looking to create tech that makes a real impact.
           </p>
 
           <Button onClick={handleReadMore}
